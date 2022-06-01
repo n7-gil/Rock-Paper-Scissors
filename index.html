@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./assets/style.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" type="text/css" href="assets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
 </head>
+
 <body>
+    <header>
+        <h1>Rock, Paper, Scissors!</h1>
+    </header>
+
+    <main>
+        <section class="game">
+
+            <div class="score">
+                <div class="playerScore">
+                    <h2>Player</h2>
+                    <p class="player-count count">0</p>
+                </div>
+                <div class="computerScore">
+                    <h2>Computer</h2>
+                    <p class="comp-count count">0</p>
+                </div>
+                <div class="tiedScore">
+                    <h2>Ties</h2>
+                    <p class="tied-count count">0</p>
+                </div>
+            </div>
+
+                <div class="move">
+                    <button class="rock">Rock</button>
+                    <button class="paper">Paper</button>
+                    <button class="scissor">Scissors</button>
+                </div>
+
+                <button class="reload">Start Over</button>
+        </section>
+    </main>
+
+    <footer>
+        <h3>
+            Designed and made by Anthony Quinones & Gilberto Escobedo &copy; 2022 TonyQ032 N7-Gil
+        </h3>
+    </footer>
+    
     <script src="./assets/script.js"></script>
 </body>
 </html>

@@ -1,1 +1,45 @@
 /* placeholder text */
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Press+Start+2P&display=swap');
+
+* {
+    /* text-align: center; */
+    background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Rock,paper,scissors title  */
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 25px;
+}
+/* scores  */
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+}
+/* footer text  */
+h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+    text-align: center;
+    text-decoration: underline; 
+}
+
+.score {
+    display: flex;
+}
