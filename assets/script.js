@@ -14,10 +14,37 @@ var computerChoice = playerChoice[randomNumber];
 
 console.log(randomNumber);
 console.log(computerChoice);
-alert(computerChoice);
 // * As a user, I want the option to play again whether I win or lose.
 
 // * As a user, I want to see my total wins, ties, and losses after each round.
+
+playerChoice = playerChoice[1];
+
+//Logic for the game
+// If player chooses rock
+if (playerChoice === "rock" && computerChoice === "rock") {
+    alert("It's a tie! You both chose rock!");
+} else if (playerChoice === "rock" && computerChoice === "paper") {
+    alert("You lose! Computer chose paper!");
+} else if (playerChoice === "rock" && computerChoice === "scissors") {
+    alert("You win! Computer chose scissors!");
+
+// If player chooses paper 
+} else if (playerChoice === "paper" && computerChoice === "rock") {
+    alert("You win! Computer chose rock!");
+} else if (playerChoice === "paper" && computerChoice === "paper") {
+    alert("It's a tie! You both chose paper!");
+} else if (playerChoice === "paper" && computerChoice === "scissors") {
+    alert("You lose! Computer chose scissors!");
+
+// If player chooses scissors
+} else if (playerChoice === "scissors" && computerChoice === "rock") {
+    alert("You lose! Computer chose rock!");
+} else if (playerChoice === "scissors" && computerChoice === "paper") {
+    alert("You win! Computer chose paper!");
+} else {
+    alert("It's a tie! You both chose paper!");
+}
 
 // ### Specifications
 
